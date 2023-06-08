@@ -1,4 +1,4 @@
-# Instalacion de Moodle con docker con el Equipo6
+# Instalacion de Moodle en docker (Equipo 6)
 
 ## Moodle y dependencias
 - Instalacion con docker-compose
@@ -11,19 +11,23 @@ sudo apt install docker-compose
 ## Paso 1) Clonar el repositorio
 
 1. Clonar el repositorio al directorio local de instalación
-    git clone https://github.com/Davidxdpee/DockerComposeEquipo6
+```bash
+git clone https://github.com/Davidxdpee/DockerComposeEquipo6
+``` 
 
 ![Moodle-Screen01](fotos/01_Clone.png)
 
 ## Paso 2) Correr Moodle
 
 1. Para correr los contenedores
-
+   - Primero cambiamos a la carpeta clonada mediante el comando:
 ```bash
 cd DockerComposeEquipo6
 ``` 
     
 ![Moodle-Screen02](fotos/02_Change.png)
+
+   - Para despues ejecutar el siguiente comando:
 
     docker-compose up -d
 
@@ -43,7 +47,7 @@ docker compose down
 
 ![Moodle-Screen05](fotos/05_Stop.png)
 
-# Paso 3)Login en Moodle
+# Paso 3) Login en Moodle
 1. Credenciales Admin
   - http://localhost/
   - Username: `user`
@@ -57,7 +61,7 @@ docker compose down
 
 ![Moodle-Screen07](fotos/07_Login2.png)
 
-# Paso 4)Creacion de un curso
+# Paso 4) Creacion de un curso
 1. Habilitamos el modo edicion
 
 ![Moodle-Screen08](fotos/08_Edicion.png)
